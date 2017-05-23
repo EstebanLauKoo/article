@@ -31,12 +31,7 @@ app.engine("handlebars", exphbs({ defaultLayout: "main"}))
 app.set("view engine", "handlebars")
 
 //Makes public a static dir.
-app.use(express.static("public"));
-
-// Database configuration
-var databaseUrl = "articles";
-var collections = ["notes"];
-
+app.use(express.static("public"))
 
 // Hook mongojs config to db variable
 mongoose.connect("mongodb://heroku_zwk8j3m7:she1vd93c87k184pqnsl8lbiue@ds147551.mlab.com:47551/heroku_zwk8j3m7")
