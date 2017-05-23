@@ -16,7 +16,7 @@ var cheerio = require("cheerio")
 
 mongoose.Promise = Promise;
 
-var PORT = (process.env.port || 4000)
+var PORT = process.env.PORT || 4000
 var app = express();
 
 // Set the app up with morgan, body-parser, and a static folder
