@@ -39,7 +39,7 @@ var collections = ["notes"];
 
 
 // Hook mongojs config to db variable
-mongoose.connect("mongodb://localhost/homeworkArticles")
+mongoose.connect("mongodb://heroku_zwk8j3m7:she1vd93c87k184pqnsl8lbiue@ds147551.mlab.com:47551/heroku_zwk8j3m7")
 var db = mongoose.connection
 
 // Log any mongojs errors to console
